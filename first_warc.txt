@@ -1,0 +1,500 @@
+WARC/1.0
+WARC-Type: warcinfo
+WARC-Date: 2026-03-05T07:07:56Z
+WARC-Record-ID: <urn:uuid:8037c9e0-d61b-4def-9f1b-6aac414cb992>
+Content-Length: 488
+Content-Type: application/warc-fields
+WARC-Filename: CC-MAIN-20260305070756-20260305100756-00000.warc.gz
+
+isPartOf: CC-MAIN-2026-12
+publisher: Common Crawl
+description: Wide crawl of the web for March 2026
+operator: Common Crawl Admin (info@commoncrawl.org)
+hostname: ip-10-67-67-113
+software: Apache Nutch 1.21 (modified, https://github.com/commoncrawl/nutch/)
+robots: checked via crawler-commons 1.7-SNAPSHOT (https://github.com/crawler-commons/crawler-commons)
+format: WARC File Format 1.1
+conformsTo: https://iipc.github.io/warc-specifications/specifications/warc-format/warc-1.1/
+
+
+WARC/1.0
+WARC-Type: request
+WARC-Date: 2026-03-05T08:39:38Z
+WARC-Record-ID: <urn:uuid:240dc1f6-3d96-4b5a-be9f-c4170665ab74>
+Content-Length: 333
+Content-Type: application/http; msgtype=request
+WARC-Warcinfo-ID: <urn:uuid:8037c9e0-d61b-4def-9f1b-6aac414cb992>
+WARC-IP-Address: 45.199.9.233
+WARC-Target-URI: http://020bld.cn.vauofnj.cn/html/991f998999.html
+WARC-Protocol: http/1.1
+
+GET /html/991f998999.html HTTP/1.1
+User-Agent: CCBot/2.0 (https://commoncrawl.org/faq/)
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8
+Accept-Language: en-US,en;q=0.5
+If-Modified-Since: Mon, 13 Oct 2025 22:34:51 GMT
+Accept-Encoding: zstd, br, gzip
+Host: 020bld.cn.vauofnj.cn
+Connection: Keep-Alive
+
+
+
+WARC/1.0
+WARC-Type: response
+WARC-Date: 2026-03-05T08:39:38Z
+WARC-Record-ID: <urn:uuid:410fc213-8e9f-4e18-9416-66b4bac5cdce>
+Content-Length: 18841
+Content-Type: application/http; msgtype=response
+WARC-Warcinfo-ID: <urn:uuid:8037c9e0-d61b-4def-9f1b-6aac414cb992>
+WARC-Concurrent-To: <urn:uuid:240dc1f6-3d96-4b5a-be9f-c4170665ab74>
+WARC-IP-Address: 45.199.9.233
+WARC-Target-URI: http://020bld.cn.vauofnj.cn/html/991f998999.html
+WARC-Protocol: http/1.1
+WARC-Payload-Digest: sha1:Y3A2ZVP4G3DQ7B6VFJVTJVUWJQOJHPCZ
+WARC-Block-Digest: sha1:IWX6HQATOJKIKYCWNULNS7WOQPQFE6UU
+WARC-Identified-Payload-Type: text/html
+
+HTTP/1.1 200 OK
+Date: Thu, 05 Mar 2026 08:39:37 GMT
+Server: Apache
+Upgrade: h2
+Connection: Upgrade, close
+Vary: Accept-Encoding
+X-Crawler-Content-Encoding: gzip
+X-Crawler-Content-Length: 6095
+Content-Length: 18576
+Content-Type: text/html; charset=utf-8
+
+<script type="text/javascript" src="/js/meyq.script"></script>﻿<!doctype html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>百合花花蕊染色洗得掉吗</title>
+<meta name="description" content="百合花花蕊染色洗得掉吗-业百科方法:用吸尘器靠近花粉掉落的地方将大部分花粉吸走,小部分的可以配合小刷子,动作一定要轻,再用卸妆液清洗两到三遍即可;将衣物上残余的花蜜刮除干净。百合花花蕊染色怎么去除?方
+" />
+<meta name="keywords" content="百合花花蕊染色洗得掉吗" />
+<link href="/favicon.ico" rel="shortcut icon" />
+<link rel="stylesheet" type="text/css" href="http://020bld.cn.vauofnj.cn/template/company/qiye005/App/Home/Public/css/child_cart.css" />
+<link rel="stylesheet" type="text/css" href="http://020bld.cn.vauofnj.cn/template/company/qiye005/App/Home/Public/css/child_atm.css" />
+<link rel="stylesheet" type="text/css" href="http://020bld.cn.vauofnj.cn/template/company/qiye005/App/Home/Public/css/master.css" />
+<link rel="stylesheet" type="text/css" href="http://020bld.cn.vauofnj.cn/template/company/qiye005/App/Home/Public/css/subpage.css" />
+<script type="text/javascript" src="http://020bld.cn.vauofnj.cn/template/company/qiye005/App/Home/Public/js/jquery.js"></script>
+<script type="text/javascript" src="http://020bld.cn.vauofnj.cn/template/company/qiye005/App/Home/Public/js/banner.js"></script>
+<script type="text/javascript" src="http://020bld.cn.vauofnj.cn/template/company/qiye005/App/Home/Public/js/child_atm.js"></script>
+<script type="text/javascript" src="http://020bld.cn.vauofnj.cn/template/company/qiye005/App/Home/Public/js/Marquee.js"></script>
+<script type="text/javascript" src="http://020bld.cn.vauofnj.cn/template/company/qiye005/App/Home/Public/js/jQselect.js"></script>
+<script type="text/javascript" src="http://020bld.cn.vauofnj.cn/template/company/qiye005/App/Home/Public/js/zx.js"></script>
+<script type="text/javascript" src="http://020bld.cn.vauofnj.cn/template/company/qiye005/App/Home/Public/js/lihe.js"></script>
+<script type="text/javascript" src="http://020bld.cn.vauofnj.cn/template/company/qiye005/App/Home/Public/js/urlredirect.js"></script>
+<!--[if IE 6]>
+<script type="text/javascript" src="js/png.js"></script>
+<script>DD_belatedPNG.fix('div,img,span,li,a,a:hover,dd,p,input,select')</script>
+<![endif]-->
+<script type="text/javascript">
+    $(function(){
+    
+        //一次纵向滚动一个
+        $('#marquee2').kxbdSuperMarquee({
+            distance:30,
+            time:3,
+            btnGo:{up:'#goU',down:'#goD'},
+            direction:'up'
+        });
+        
+        
+        
+    });
+    
+    </script>
+<script type="text/javascript">
+    window.onload = function(){
+//        imgZoomRun("product3","p","prod-zoom","li"); // 图片放大
+//        imgZoomRun("product7","p","prod-zoom","li");
+//        imgZoomRun("product8","p","prod-zoom","li");
+//        newsFontMove("fontjump"); // 鼠标放上，字体上下挪
+//        newsFontMove("fontjumpcolor"); // 鼠标放上，字体上下挪
+//        colorChange("fontjumpcolor"); // 隔行换色
+//        colorChange("news5"); // 隔行换色
+//        listImgZoom("product3","205"); // 图片缩放，需要给定宽度
+        enterAnimation("news_fadein");
+        if(typeof(data) != "undefined"){
+            var lefttype = new LeftType(data,"left-type",0); // 多级分类
+        }
+        afx.conHeightAuto();
+    };
+    window.addEventListener("resize",function(){
+        afx.conHeightAuto();
+    },false);
+    /*window.onresize = function(){
+        afx.conHeightAuto();
+    };   */
+</script>
+<link rel="stylesheet" type="text/css" href="http://020bld.cn.vauofnj.cn/template/company/qiye005/App/Home/Public/css/child_page.css" />
+<script type="text/javascript" src="http://020bld.cn.vauofnj.cn/template/company/qiye005/App/Home/Public/js/zoom.js"></script>
+</head>
+
+
+﻿<div class="header">
+  
+  <div class="h_mid_c">
+    <div class="h_mid">
+      <div class="logo"> <a href="/" title="昭通市某某橡塑制品维修站"> <img src="http://020bld.cn.vauofnj.cn/template/company/qiye005/App/Home/Public/images/temp/0013920_03.png" alt="昭通市某某橡塑制品维修站" /> </a> </div>
+      <div class="search" id="bigse">
+        
+          <input type="text" class="text" value="请输入关键词" name="sk" id="kws" onFocus="this.value=''" onBlur="if(!value){value=defaultValue}"  />
+          <div class="select">
+            <select id="rid" style="display: none" name="nochongf">
+              
+            </select>
+          </div>
+          <input type="submit" title="搜索" class="button" value=""/>
+        <script type=text/javascript>
+                                jQuery(document).ready(function() {
+                                    jQuery("#rid").selectbox();
+                                });
+                            </script>
+        <script>
+                    $(function(){
+                      $('#rid_container li').click(function(){
+                          var url = $(this).attr('id').substr($(this).attr('id').indexOf('_/')+1);
+                        $(this).closest('form').attr('action',url);
+                      });
+                    })
+                  </script>
+      </div>
+      <div class="head_rtel">服务热线：020-123456789</div>
+    </div>
+    <div class="c"></div>
+  </div>
+  
+  
+  <div class="nav_c">
+    <div class="nav">
+      <ul>
+        <li> <a href="/" title="网站首页">网站首页</a> </li>
+           <li><a href="http://020bld.cn.vauofnj.cn/about.html">关于我们</a></li>
+    	<li> <a href="http://020bld.cn.vauofnj.cn/product_list/qicheyinxiang.html"  title="汽车音响" class=" down">汽车音响</a></li>
+   	<li> <a href="http://020bld.cn.vauofnj.cn/product_list/qichepeijian.html"  title="汽车配件" class=" down">汽车配件</a></li>
+   	<li> <a href="http://020bld.cn.vauofnj.cn/product_list/qichedianping.html"  title="汽车电瓶" class=" down">汽车电瓶</a></li>
+       <li><a href="http://020bld.cn.vauofnj.cn/newslist/news/">新闻中心</a></li>
+   <li><a href="http://020bld.cn.vauofnj.cn/lianxi.html">联系我们</a></li>
+      </ul>
+    </div>
+  </div>
+  
+</div>
+
+
+<style>
+  /*首页头部banner*/
+  .banner{height:478px; width:100%; overflow:hidden; position:relative;}
+  .banner>ul{width:auto;}
+  .banner>ul li{height:478px; background-size:cover; background-position:center center; float:left;background-repeat: no-repeat}
+  .banner>ul li a{display:block;height:100%; width:100%;}
+  .banner .ctrl{position:absolute; z-index:99; bottom:20px;text-align:center;left:0;width:100%;}
+  .banner .ctrl div{  width:12px; height: 12px;background:#2d2e32; margin:0 2px;cursor:pointer; display:inline-block; *display:inline;zoom:1;overflow: hidden;font-size:0; border-radius:50%; }
+  .banner .ctrl div.now{background-color:#44aa08;}
+  .banner .prev{left:15px;}
+  .banner .next{ right:15px;}
+    .banner .prev,.banner .next{width: 46px!important;color:#fff;font-family: "宋体";font-size:50px;
+    height:91px!important; position:absolute; z-index:100; cursor:pointer;top:180px;}
+
+</style>
+<script type="text/javascript">
+  // 轮播图
+  function runImg(runBlock, ctrls, pages, auto){
+      var page = 0;
+      var max_page = Math.ceil(runBlock.find('ul').find('li').length);
+      var img_width = runBlock.width();
+        var autoRunItem;
+      runBlock.find('ul').find('li').css('width', img_width);
+      runBlock.find('ul').css('width', max_page*img_width);
+      if(ctrls){
+        var ctrl_width = 0;
+        for(var i=0; i<max_page; i++){
+            runBlock.find('.ctrl').append('<div></div>');
+            ctrl_width += 20;
+        }
+        // runBlock.find('.ctrl').css('margin-left', -ctrl_width/2);
+        runBlock.find('.ctrl div').first().addClass('now');
+        runBlock.find('.ctrl div').click(function(){
+            page = $(this).index();
+            runBlock.find('ul').animate({'marginLeft':-page*img_width}, 500);
+            runBlock.find('.ctrl div').removeClass('now');
+            $(this).addClass('now');
+        });
+      }
+      if(pages){
+        runBlock.find('.next').click(function(){
+            page++;
+            if(page >= max_page){
+                page = 0;
+            }
+            runBlock.find('ul').animate({'marginLeft':-page*img_width}, 500);
+            if(ctrls){
+              runBlock.find('.ctrl div').removeClass('now').eq(page).addClass('now');
+            }
+        });
+        runBlock.find('.prev').click(function(){
+            page--;
+            if(page < 0){
+                page = max_page - 1;
+            }
+            runBlock.find('ul').animate({'marginLeft':-page*img_width}, 500);
+            if(ctrls){
+              runBlock.find('.ctrl div').removeClass('now').eq(page).addClass('now');
+            }
+        });
+      }
+        if(auto){
+            autoRunItem = setInterval(function(){
+                page++;
+                if(page >= max_page){
+                    page = 0;
+                }
+                runBlock.find('ul').animate({'marginLeft':-page*img_width}, 500);
+                if(ctrls){
+                    runBlock.find('.ctrl div').removeClass('now').eq(page).addClass('now');
+                }
+            }, 5000);
+            runBlock.hover(function () {
+                clearTimeout(autoRunItem);
+            }, function () {
+                autoRunItem = setInterval(function(){
+                    page++;
+                    if(page >= max_page){
+                        page = 0;
+                    }
+                    runBlock.find('ul').animate({'marginLeft':-page*img_width}, 500);
+                    if(ctrls){
+                        runBlock.find('.ctrl div').removeClass('now').eq(page).addClass('now');
+                    }
+                }, 5000);
+            })
+        }
+  }
+  $(function(){
+      // 轮播图
+      runImg($('.banner'), true, true, true);
+  });
+</script>
+
+<div class="banner">
+  <ul class="show">
+    <li style=" background-image:url(http://020bld.cn.vauofnj.cn/template/company/qiye005/App/Home/Public/images/1001F812B6A71154F72F4717B3A81C6F.jpg);"><a href_=""></a></li>
+    <li style=" background-image:url(http://020bld.cn.vauofnj.cn/template/company/qiye005/App/Home/Public/images/99EAB0EEA157997FB4D1A8B88AC95D9D.jpg);"><a href_=""></a></li>
+  </ul>
+  <div class="next">></div>
+  <div class="prev"><</div>
+  <div class="ctrl"></div>
+</div>
+
+<div class="main_c">
+  <div class="main" id="content">
+    
+    <div class="sp_left" id="contentLeft">
+      
+      <div class="con1-left">
+        <p class="left-title1">新闻分类</p>
+        <a href="javascript:;" title="" class="class_up"></a>
+        <div class="con1_class">
+          <ul id="left-type" style="display: block;" class="show">
+            		  <li><a href="http://020bld.cn.vauofnj.cn/newslist/news/">新闻中心</a> </li>
+		            </ul>
+        </div>
+        <a href="javascript:;" title="" class="class_down"></a> </div>
+      
+      <div class="sub_youhui sub_common">
+        <div class="sub_common_title">
+          <h2>行业资讯</h2>
+        </div>
+        <div class="sub_youhui_content">
+          <div class="syl_list sub_common_padding">
+            <ul>
+              			 <li><a href='http://020bld.cn.vauofnj.cn/html/836f999154.html' title='网上名媛是什么梗' target='_self'>网上名媛是什么梗</a> </li>
+                           </ul>
+          </div>
+        </div>
+      </div>
+      
+      <div class="sub_content sub_common">
+        <!--<div class="sub_common_title">
+        <h2>联系我们</h2>
+    </div>-->
+        <p class="fy_ltname">咨询热线</p>
+        <span class="fyltel">020-123456789</span>
+        <div class="sub_content_list sub_common_padding">
+          
+          地址：联系地址联系地址联系地址 <br />
+          电话：020-123456789 <br />
+          邮箱：admin@aa.com} <br />
+        </div>
+      </div>
+      
+    </div>
+    
+    
+    <div class="sp_content" id="contentRight">
+      <div class="content_com_title">
+        <h2>汽车电瓶</h2>
+        <div class="bread"> 当前位置：<a href="/">首页</a> > <a href="http://020bld.cn.vauofnj.cn/product_list/qichedianping.html">汽车电瓶</a> </div>
+      </div>
+      <div class="content">
+        <div class="view">
+          <h1 class="view-title">百合花花蕊染色洗得掉吗</h1>
+          <div class="view-date"> <span>发布时间：2026-03-05 16:39:37</span> <span>点击量：<span id="clicksArea">735</span></span> </div>
+          <div class="bdsharebuttonbox view-share"> <a href="#" class="bds_more" data-cmd="more"></a> <a href="#" class="bds_qzone" data-cmd="qzone" title="分享到QQ空间"></a> <a href="#" class="bds_tsina" data-cmd="tsina" title="分享到新浪微博"></a> <a href="#" class="bds_tqq" data-cmd="tqq" title="分享到腾讯微博"></a> <a href="#" class="bds_renren" data-cmd="renren" title="分享到人人网"></a> <a href="#" class="bds_weixin" data-cmd="weixin" title="分享到微信"></a> </div>
+          <div class="boxcen">
+            <h3>百合花花蕊染色洗得掉吗 - 业百科</h3><p>方法:用吸尘器靠近花粉掉落的百合地方将大部分花粉吸走,小部分的可以配合小刷子,动作一定要轻,再用卸妆液清洗两到三遍即可;将衣物上残余的花蜜刮除干净。</p><h3>百合花花蕊染色怎么去除?</h3><p>方法一:使用过氧化氢滴在地板上染色的花花位置,用清洁的毛巾擦拭即可。方法二:将牙膏挤在衣服染色处,用手搓洗,之后放入清水中再清洗一遍即可</p><h3>衣服上染了百合花的蕊染花蜜，怎么洗下来啊?</h3><p>衣服上沾有百合花的色洗花蜜,清洗前先查看衣物洗涤标签,可水洗且不易褪色的衣物,可用如下方法清洗: 1、首先将衣物上残余的得掉花蜜刮除干净;如果污渍还在,将衣。</p><h3>衣服上沾了百合花的百合花蕊，衣服都被染黄了。花花用洗衣液洗了好多遍都洗不干净，蕊染怎么办?</h3><p>氨水,化工商店买得到,几块钱一瓶的色洗,刺激性气味很大,注意个人防护。 棉签蘸着擦几次,然后再用洗衣粉洗,洗衣液不行的得掉,洗涤效果远不及洗衣粉,只是相对来说。</p><h3>百合花蕊沾到衣服上了,能洗下来吗?</h3><p>解决方法: 1、百合可以用漂白水1:1兑水,滴到衣服上,30秒后在水龙头下搓揉,还有颜色的花花话,继续以上步骤! 2、如果还有痕迹,要是蕊染女性或儿童的上衣、裤子。色洗</p><h3>百合花蕊的得掉黄色怎么清除?</h3><p>用几滴醋轻搓几下,就能去掉。如果沾上了百合花粉,尽量不要用水擦洗,因为遇到水,哪怕一点点,花粉的颜色就会留在衣服或家具上,难以去除。首先用吸尘器靠近花。</p><h3>百合花蕊染的颜色能不能洗掉 棕色的毛绒小熊 身体被染了一大...</h3><p>能,在被染的地方涂上肥皂后适当加点洗洁精,效果会更好,洗前用温水浸泡效果更好!</p><h3>衣服弄到百合花花粉如何去除?</h3><p>花粉中的色素渗透进衣服里,类似于染色了。你可以试一试下面方法:1. 酒精洗(估计比较难)2. 超市里专门卖的专门的清洗剂3. 如果是白衣服请用84或者漂白粉吧4.。</p><h3>百合花红色花蕊用去掉吗?</h3><p>此外还有一个原因就是百合花花蕊上的花粉如果不小心弄到了柱头上,可能花朵就会以为是已经授粉了,可能花朵就会凋谢,进而转去孕育种子,那么会影响百合花的观。</p><h3>地板被百合花花蕊染色怎么处理?</h3><p>可以用木器漆稀释剂,也就是平时所说的香蕉水或天那水擦拭,如果是吸进去了,不知道是地板砖本身吸色,还是地板砖之间的缝隙吸进了颜色,前者的话需要考虑更换地。</p><p>百合花花蕊染色洗得掉。方法：</p><p>1、用吸尘器靠近花粉掉落的地方将大部分花粉吸走，小部分的可以配合小刷子，动作一定要轻，再用卸妆液清洗两到三遍即可。</p><p>2、将衣物上残余的花蜜刮除干净，再将衣物在冷水中浸泡，使污渍淡化，在衣服干的时候，用手洗专用洗衣液原液涂抹在污渍处，完全覆盖污渍，静置5分钟后，加入洗衣液常规洗涤即可。</p><p><strong>百合：</strong></p><p>百合，为百合科百合属植物，原产于中国，主要分布在亚洲东部、 欧洲、北美洲等北半球温带。株高70~150厘米。鳞茎球形，淡白色，先端常开放如莲座状，由多数肉质肥厚、卵匙形的鳞片聚合而成。根分为肉质根和纤维状根两类。喜凉爽，较耐寒。高温地区生长不良。喜干燥，怕水涝。</p>          </div>
+          <div class="page">
+           
+			<p>  上一篇:<a href="http://020bld.cn.vauofnj.cn/html/840e999150.html" title="买桔子的梗是什么意思" target="_self" class="">买桔子的梗是什么意思</a></p>
+			<p>下一篇:<a href="http://020bld.cn.vauofnj.cn/html/857e999133.html" title="手办怎么清洗" target="_self" class="">手办怎么清洗</a></p>
+            <a href="http://020bld.cn.vauofnj.cn/product_list/qichedianping.html" title="返回" class="back" >返回</a> </div>
+        </div>
+      </div>
+    </div>
+    
+  </div>
+</div>
+
+
+<div class="boofra">
+  <div class="fmain"> <span class="footleft"><b>咨询热线：</b><font>020-123456789</font></span>
+    <div class="clear"></div>
+  </div>
+  <div class="fmain">
+    <div class="linkleft"> <span>LINK 友情链接：</span>
+		 </div>
+  </div>
+</div>
+<div class="footclear"></div>
+<div class="foot">
+  <div class="fmain">
+    <div class="bootTxt">
+      <DIV class="booleft">版权所有：昭通市某某橡塑制品维修站 020-123456789&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </DIV>
+      <div class="booright">
+        <div class="i_icp">ICP备案编号：<a href="http://www.beian.miit.gov.cn/" title="辽ICP备18004548号-1" target="_blank">辽ICP备18624548号-1</a> </div>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="side_nav">
+  <ul>
+    <li class="back_top"> <a href="#"> <span>返回顶部</span> </a> </li>
+  </ul>
+  <div class="c"></div>
+</div></body>
+</html>
+
+WARC/1.0
+WARC-Type: metadata
+WARC-Date: 2026-03-05T08:39:38Z
+WARC-Record-ID: <urn:uuid:bf49ed92-a2dd-4c08-8ee2-8e47e32f327f>
+Content-Length: 201
+Content-Type: application/warc-fields
+WARC-Warcinfo-ID: <urn:uuid:8037c9e0-d61b-4def-9f1b-6aac414cb992>
+WARC-Concurrent-To: <urn:uuid:410fc213-8e9f-4e18-9416-66b4bac5cdce>
+WARC-Target-URI: http://020bld.cn.vauofnj.cn/html/991f998999.html
+
+fetchTimeMs: 554
+charset-detected: UTF-8
+languages-cld2: {"reliable":true,"text-bytes":3904,"languages":[{"code":"zh","code-iso-639-3":"zho","text-covered":0.99,"score":1869.0,"name":"Chinese"}]}
+
+
+
+WARC/1.0
+WARC-Type: request
+WARC-Date: 2026-03-05T08:30:24Z
+WARC-Record-ID: <urn:uuid:8199d790-3f2d-4a88-b8c2-85ec33d1a7e1>
+Content-Length: 330
+Content-Type: application/http; msgtype=request
+WARC-Warcinfo-ID: <urn:uuid:8037c9e0-d61b-4def-9f1b-6aac414cb992>
+WARC-IP-Address: 103.231.12.168
+WARC-Target-URI: http://021sakura.com/news/news.php?class2=141
+WARC-Protocol: http/1.1
+
+GET /news/news.php?class2=141 HTTP/1.1
+User-Agent: CCBot/2.0 (https://commoncrawl.org/faq/)
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8
+Accept-Language: en-US,en;q=0.5
+If-Modified-Since: Mon, 08 Dec 2025 16:59:22 GMT
+Accept-Encoding: zstd, br, gzip
+Host: 021sakura.com
+Connection: Keep-Alive
+
+
+
+WARC/1.0
+WARC-Type: response
+WARC-Date: 2026-03-05T08:30:24Z
+WARC-Record-ID: <urn:uuid:f719d53c-2b1b-4b19-8134-25672f20ea43>
+Content-Length: 44231
+Content-Type: application/http; msgtype=response
+WARC-Warcinfo-ID: <urn:uuid:8037c9e0-d61b-4def-9f1b-6aac414cb992>
+WARC-Concurrent-To: <urn:uuid:8199d790-3f2d-4a88-b8c2-85ec33d1a7e1>
+WARC-IP-Address: 103.231.12.168
+WARC-Target-URI: http://021sakura.com/news/news.php?class2=141
+WARC-Protocol: http/1.1
+WARC-Payload-Digest: sha1:IFFDQG6YWJ2MBMCZWXXO4TOXQBAM64PH
+WARC-Block-Digest: sha1:MISBCOOWXK4O6R2IQT3F5MBPZP4GCSHL
+WARC-Identified-Payload-Type: text/html
+
+HTTP/1.1 200 OK
+Server: nginx
+Date: Thu, 05 Mar 2026 08:30:24 GMT
+Content-Type: text/html;charset=UTF-8
+X-Crawler-Transfer-Encoding: chunked
+Connection: keep-alive
+Vary: Accept-Encoding
+X-Crawler-Content-Encoding: gzip
+Content-Length: 43979
+
+
+<!DOCTYPE HTML>
+<html class="oxh met-web" >
+<head>
+<meta charset="utf-8">
+<meta name="renderer" content="webkit">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,minimum-scale=1.0,user-scalable=0,minimal-ui">
+<meta name="format-detection" content="telephone=no">
+<title>行业资讯-风暴平台</title>
+<meta name="description" content="风暴平台秉承“为合作伙伴创造价值”的核心价值观,并以“诚实、宽容、创新、服务”风暴注册为企业精神,通过自主创新和真诚合作为电子商务及信息服务行业创造价值，欢迎光临上海樱花热水器维修服务，专业樱花热水器维修，不点火，漏水，意外熄火，水温不稳定，响声异常，樱花热水器不工作等故障。">
+<meta name="keywords" content="风暴">
+<meta name="generator" content="MetInfo V7.6" data-variable="../|cn|cn|metv75|2|141|0" data-user_name="">
+<link href="../favicon.ico?1659846722" rel="shortcut icon" type="image/x-icon">
+<link rel="stylesheet" type="text/css" href="../public/web/css/basic.css?1658472342">
+<link rel="stylesheet" type="text/css" href="../templates/metv75/cache/metinfo.css?1769144176">
+<style>
+body{
+    background-color: !important;font-family: !important;}
+h1,h2,h3,h4,h5,h6{font-family: !important;}
+</style>
+<script>(function(){var t=navigator.userAgent;(t.indexOf("rv:11")>=0||t.indexOf("MSIE 10")>=0)&&document.write("<script src=\"../public/plugins/html5shiv/html5shiv.min.js\"><\/script>")})();</script>
+</head>
+<!--[if lte IE 9]>
+<div class="text-xs-center m-b-0 bg-blue-grey-100 alert">
+    <button type="button" class="close" aria-label="Close" data-dismiss="alert">
+        <span aria-hidden="true">×</span>
+    </button>
+    你正在使用一个过时的浏览器。请升级你的浏览器，以提高您的体验。</div>
+<![endif]-->
+<body >
+<style type="text/css">
+    .ibox{position: relative;}
+    .ibg {width: 100%;}
+    .ilogobox {position: absolute;display: flex;flex-wrap: nowrap;top: 20%;justify-content: center;width: 100%;}
+    .iconbox {position: absolute;display: flex;flex-wrap: nowrap;top: 27%;justify-content: center;width: 100%;}
+    .ilogo{position: absolute;}
+    .iconbox .nr{width:400px;color: #fff; }
+      .nbg{color: #fff;
+    background: #000;
+    width: 520px;
+    height: 400px;
+    opacity: 0.5;
+    border-radius: 3px;
+    position: absolute;
+    left: calc(50% - 260px);
+    top: 16%;}
+    .iconbox .nr a{color: #fff;}
