@@ -4,14 +4,16 @@ from fastwarc.warc import ArchiveIterator, WarcRecordType
 from cs336_data.extract import extract_text_from_html_bytes
 from cs336_data.langid import identify_language
 from cs336_data.pii import mask_emails,mask_phone_numbers,mask_ips
+from cs336_data.toxicity import classify_nsfw,classify_toxic_speech
 
 warc_path = "local-shared-data/CC/example.warc.gz"
 
-nums=random.sample(range(500),20)
+nums=random.sample(range(500),300)
 nums=set(nums)
 max_index=max(nums)
 counter=0
 texts=[]
+en_texts=[]
 
 with gzip.open(warc_path, "rb") as stream:
     for record in ArchiveIterator(stream):
@@ -28,9 +30,12 @@ with gzip.open(warc_path, "rb") as stream:
         counter+=1
 
 for text in texts:
-    text,email_masked_num=mask_emails(text)
-    text,phone_numbers_masked_num=mask_phone_numbers(text)
-    text,ips_masked_num=mask_ips(text)
-    print((email_masked_num,phone_numbers_masked_num,ips_masked_num))
-    print(text[:1000])
+    label,score=identify_language(text)
+    if label=='en' and score>=0.9:
+        en_texts.append(text)
+
+for text in en_texts:
+    print(classify_nsfw(text))
+    print(classify_toxic_speech(text))
+    print(text[:500])
 

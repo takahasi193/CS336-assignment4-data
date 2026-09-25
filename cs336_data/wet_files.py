@@ -1,6 +1,7 @@
 import gzip
 import shutil
 import tempfile
+import time
 import urllib.request
 from functools import cached_property
 from io import BytesIO
@@ -14,11 +15,21 @@ from warcio.archiveiterator import ArchiveIterator
 from warcio.warcwriter import WARCWriter
 
 from cs336_data.common import get_shared_assets_path
+from cs336_data.langid import identify_language
 from cs336_data.modal_utils import VOLUME_MOUNTS, app, build_image
 from furu import Furu
 
+opener=urllib.request.build_opener()
+opener.addheaders=[("User-Agent","Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/153.0.0.0 Safari/537.36")]
+urllib.request.install_opener(opener)
+
 BASE_URL = "https://data.commoncrawl.org/"
 
+def my_is_english(text:str)->bool:
+    label,score=identify_language(text)
+    if label=="en" and score>=0.7:
+        return True
+    return False
 
 
 class _EnglishWetFile(Furu[Path]):
@@ -28,7 +39,7 @@ class _EnglishWetFile(Furu[Path]):
         output_path = self.data_dir / "data.warc.wet.gz"
 
         self.logger.info("Loading English language identifier")
-        is_english: Callable[[str], bool] = "TODO"
+        is_english: Callable[[str], bool] = my_is_english
         assert is_english != "TODO", "you need to implement is_english. we use probability >= 0.7 with https://dl.fbaipublicfiles.com/fasttext/supervised-models/lid.176.bin"
 
         total_text = 0
@@ -47,8 +58,20 @@ class _EnglishWetFile(Furu[Path]):
             for wet_url in self.chunk_urls:
                 local_wet_path = Path("/tmp") / wet_url.split("/")[-1]
                 if not local_wet_path.exists():
-                    self.logger.info("Downloading %s to %s", wet_url, local_wet_path)
-                    urllib.request.urlretrieve(wet_url, local_wet_path)
+                    max_retries = 5
+                    for attempt in range(max_retries):
+                        try:
+                            self.logger.info("Downloading %s to %s (attempt %d/%d)", wet_url, local_wet_path, attempt + 1, max_retries)
+                            urllib.request.urlretrieve(wet_url, local_wet_path)
+                            break
+                        except Exception as e:
+                            local_wet_path.unlink(missing_ok=True)
+                            if attempt == max_retries - 1:
+                                self.logger.error("Failed to download %s after %d attempts: %s", wet_url, max_retries, e)
+                                raise RuntimeError(f"Failed to download {wet_url}: {e}") from None
+                            wait_seconds = 2 ** (attempt + 1)
+                            self.logger.warning("Download failed for %s (%s). Retrying in %ds...", wet_url, e, wait_seconds)
+                            time.sleep(wait_seconds)
                 else:
                     self.logger.info("Using cached WET file %s", local_wet_path)
                 with gzip.open(local_wet_path, "rb") as input_stream:
@@ -80,13 +103,13 @@ class _EnglishWetFile(Furu[Path]):
         return get_shared_assets_path() / "furu"
 
 
-@app.function(image=build_image(), volumes=VOLUME_MOUNTS, timeout=60 * 60 * 12, max_containers=128)
+@app.function(image=build_image(), volumes=VOLUME_MOUNTS, timeout=60 * 60 * 12, max_containers=8, retries=3)
 def make_wet_file_on_modal(wet_file: _EnglishWetFile) -> Path:
     return wet_file.load_or_create()
 
 
 class EnglishWetFiles(Furu[list[Path]]):
-    n_files: int = 2500
+    n_files: int = 200
     group_size: int = 4
     shuffle_seed: int = 336
     crawl_id: str = "CC-MAIN-2026-17"
@@ -131,7 +154,7 @@ class EnglishWetFiles(Furu[list[Path]]):
             self.logger.info("Completed %d remote WET chunks", len(wet_data_paths))
 
             repo_path = get_shared_assets_path() / "english-wet-data"
-            repo_path.mkdir(exist_ok=False)
+            repo_path.mkdir(parents=True, exist_ok=True)
             self.logger.info("Linking remote WET outputs into %s", repo_path)
 
             source_link = repo_path / ".source"

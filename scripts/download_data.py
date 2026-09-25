@@ -6,10 +6,15 @@ import urllib.request
 from pathlib import Path
 
 import modal
+from cs336_data.modal_utils import shared_data_volume
 
 from cs336_data.common import get_shared_assets_path
 from cs336_data.modal_utils import VOLUME_MOUNTS, app, build_image
 from cs336_data.wet_files import EnglishWetFiles
+
+opener=urllib.request.build_opener()
+opener.addheaders=[("User-Agent","Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/153.0.0.0 Safari/537.36")]
+urllib.request.install_opener(opener)
 
 
 @app.function(image=build_image(), volumes=VOLUME_MOUNTS, timeout=60 * 60 * 12, max_containers=128)
@@ -84,7 +89,8 @@ def main(offline_only: bool = False):
 
     dump_date = "20260501"
     base_url = f"https://dumps.wikimedia.org/enwiki/{dump_date}/"
-    html = urllib.request.urlopen(base_url).read().decode()
+    request=urllib.request.Request(base_url, headers={"User-Agent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/153.0.0.0 Safari/537.36"})
+    html = urllib.request.urlopen(request).read().decode()
     shards = sorted(
         set(re.findall(rf"enwiki-{dump_date}-pages-articles-multistream[0-9]+\.xml-p[0-9]+p[0-9]+\.bz2", html))
     )
@@ -105,11 +111,12 @@ def main(offline_only: bool = False):
         shutil.copy2(tmp_out, wiki_out)
         tmp_out.unlink(missing_ok=True)
         print(f"[wiki] wrote {wiki_out}", flush=True)
+        return
 
     english_wet_files = EnglishWetFiles()
     wet_file_paths = english_wet_files.load_or_create()
     print(f"downloaded {len(wet_file_paths)} including {wet_file_paths[0]=}")
-
+    shared_data_volume.commit()
 
 @app.local_entrypoint()
 def modal_main(offline_only: bool = False):
